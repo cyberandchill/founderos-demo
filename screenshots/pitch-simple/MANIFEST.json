@@ -1,0 +1,46 @@
+[
+  {
+    "file": "screenshots/pitch-simple/01-find-the-winner.png",
+    "source": "screenshots/originals/pitch-simple/01-find-the-winner-card.png",
+    "size": [
+      1080,
+      1350
+    ],
+    "sha256": "aa6cdc3eabfcda3e7e9b475ca0f3ceda39b43851e90a6ecd8b4dda178c615d9e",
+    "proof": "Unchanged screenshot of real read-only platform view, populated from the persisted approved demo; headline and supporting sentence outside capture.",
+    "not_claimed": "No real integration, sent message, new campaign launch or business performance."
+  },
+  {
+    "file": "screenshots/pitch-simple/02-create-five-ideas.png",
+    "source": "screenshots/originals/pitch-simple/02-create-five-ideas-card.png",
+    "size": [
+      1080,
+      1350
+    ],
+    "sha256": "5eefdceda0b8778bb292282cc16510af45be7cd1513016a377e393b88676075c",
+    "proof": "Unchanged screenshot of real read-only platform view, populated from the persisted approved demo; headline and supporting sentence outside capture.",
+    "not_claimed": "No real integration, sent message, new campaign launch or business performance."
+  },
+  {
+    "file": "screenshots/pitch-simple/03-prepare-outreach.png",
+    "source": "screenshots/originals/pitch-simple/03-prepare-outreach-card.png",
+    "size": [
+      1080,
+      1350
+    ],
+    "sha256": "8951df6f16f59fcde0f7b6c92430d3c177f649f99dcb75fa1d82d0126bf59280",
+    "proof": "Unchanged screenshot of real read-only platform view, populated from the persisted approved demo; headline and supporting sentence outside capture.",
+    "not_claimed": "No real integration, sent message, new campaign launch or business performance."
+  },
+  {
+    "file": "screenshots/pitch-simple/04-approval-to-results.png",
+    "source": "screenshots/originals/pitch-simple/04-approval-to-results-card.png",
+    "size": [
+      1080,
+      1350
+    ],
+    "sha256": "4ca788e9ed683fdd987d48489a2674e74edfcf6b611e6d013b2609204dfb70a7",
+    "proof": "Unchanged screenshot of real read-only platform view, populated from the persisted approved demo; headline and supporting sentence outside capture.",
+    "not_claimed": "No real integration, sent message, new campaign launch or business performance."
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "genuine_browser_captures": [
+    {
+      "name": "01-find-the-winner",
+      "url": "/ugc-demo?pitch=winner",
+      "sources": [
+        "screenshots/originals/pitch-simple/01-find-the-winner-full.png",
+        "screenshots/originals/pitch-simple/01-find-the-winner-card.png"
+      ],
+      "text_verified": true,
+      "sha256": {
+        "screenshots/originals/pitch-simple/01-find-the-winner-full.png": "0baad30cd0db2d01e9de8694e0c9d2b1f575167694d42fb49bf63ebf884e4ddb",
+        "screenshots/originals/pitch-simple/01-find-the-winner-card.png": "6761326d4dad2df3e8af03c60ee002aca98c115969309f21828c76007b4a6882"
+      }
+    },
+    {
+      "name": "02-create-five-ideas",
+      "url": "/ugc-demo?pitch=ideas",
+      "sources": [
+        "screenshots/originals/pitch-simple/02-create-five-ideas-full.png",
+        "screenshots/originals/pitch-simple/02-create-five-ideas-card.png"
+      ],
+      "text_verified": true,
+      "sha256": {
+        "screenshots/originals/pitch-simple/02-create-five-ideas-full.png": "60f769475edd62e62427445782415b69ecfba56d58679115eeee1f232f95acdd",
+        "screenshots/originals/pitch-simple/02-create-five-ideas-card.png": "8fbe014ea3fdc4d7e5ed1c409f54fd259981a24ee6c2e2f5039aebcedae44d7a"
+      }
+    },
+    {
+      "name": "03-prepare-outreach",
+      "url": "/creator-crm-demo?pitch=outreach",
+      "sources": [
+        "screenshots/originals/pitch-simple/03-prepare-outreach-full.png",
+        "screenshots/originals/pitch-simple/03-prepare-outreach-card.png"
+      ],
+      "text_verified": true,
+      "sha256": {
+        "screenshots/originals/pitch-simple/03-prepare-outreach-full.png": "734168137696229174df0ac8b11740dee74f07811b4e65e1939c01903f1beeb8",
+        "screenshots/originals/pitch-simple/03-prepare-outreach-card.png": "f2b151d2885e267085af1a5c149b4bc4cc2094fcc388a9193386cd265bd0516b"
+      }
+    },
+    {
+      "name": "04-approval-to-results",
+      "url": "/creator-crm-demo?pitch=results",
+      "sources": [
+        "screenshots/originals/pitch-simple/04-approval-to-results-full.png",
+        "screenshots/originals/pitch-simple/04-approval-to-results-card.png"
+      ],
+      "text_verified": true,
+      "sha256": {
+        "screenshots/originals/pitch-simple/04-approval-to-results-full.png": "1c12869b14054dfab5e0d4cb54b0f9aa621f7ef41774d667657ba1e88dd304d5",
+        "screenshots/originals/pitch-simple/04-approval-to-results-card.png": "42a01ea33f816604464a702364c9635bf926c5ada280dcd5cb5b371bc5e58772"
+      }
+    }
+  ],
+  "page_errors": [],
+  "browser_sandbox": true,
+  "business_records_mutated": 0,
+  "checks_passed": 6,
+  "checks": [
+    "Live creator selection recomputes displayed metrics",
+    "winner live view and source screenshot",
+    "ideas live view and source screenshot",
+    "Outreach previews open actual full saved messages",
+    "outreach live view and source screenshot",
+    "results live view and source screenshot"
+  ]
+}

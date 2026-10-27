@@ -1,5 +1,5 @@
 {
-  "scope": "Explicitly selected demo source, synthetic proposals and reviewed screenshot/evidence files only",
+  "scope": "Reviewed demo source, synthetic proposals, genuine screenshots and a ZIP containing exactly the four reviewed PNG slides",
   "files": [
     {
       "path": ".gitignore",
@@ -18,18 +18,18 @@
     },
     {
       "path": "DEMO.md",
-      "sha256": "0e8e8ef36a0ba6c4fc9c13055f7cb6a0643e95427a91b635c29b90399ded105a",
-      "bytes": 2869
+      "sha256": "58c3160c1d224175056acdb2341f6a6902b9870956d47ce54cdbbbd78df00bf6",
+      "bytes": 3397
     },
     {
       "path": "README.md",
-      "sha256": "430cc9bff30454ec708c0c5b1f48ebc42fde4099600fea524c81ad555ade908a",
-      "bytes": 5192
+      "sha256": "daf29724986b07ba487e682d0e5d4e5c042f95b20b6fa1d4d5b76af72340b13c",
+      "bytes": 6093
     },
     {
       "path": "VERIFICATION.md",
-      "sha256": "6ae0f54c7fa146027477b9b4a21a0e761feed985c395fc8353ed825b35d17045",
-      "bytes": 3581
+      "sha256": "a2435e93d16a713145f5103481eb62202893326eb5e8753eaf941c2ea1ee3877",
+      "bytes": 4381
     },
     {
       "path": "app/analysis.py",
@@ -43,8 +43,8 @@
     },
     {
       "path": "app/index.html",
-      "sha256": "f42e8b278b51467bb0b9c27ff0db3abafecd0bebc07663e9df9995dfd5fe18c2",
-      "bytes": 20534
+      "sha256": "89bec3dc82375145f06f5e6b3af647f4b4e933960c5aaf0a2e825caf32fe3138",
+      "bytes": 26667
     },
     {
       "path": "app/main.py",
@@ -112,6 +112,11 @@
       "bytes": 125
     },
     {
+      "path": "evidence/pitch-browser-verification.json",
+      "sha256": "e386f8e4a7fc8fdeaef0de4eabbe80e640228c93456585a514aa742d8aa61667",
+      "bytes": 2918
+    },
+    {
       "path": "evidence/post-execution-reconciliation.json",
       "sha256": "9344eec18f368f533ee5596e5a3c904d18091fbe57f9beb3d8a8d26a36a6d2a3",
       "bytes": 200
@@ -130,6 +135,11 @@
       "path": "evidence/verified-execution.json",
       "sha256": "3202764a96597014a7d52c1376f6b6596d4b7fd13a74126f5cc5262fe038282b",
       "bytes": 8491
+    },
+    {
+      "path": "pytest.ini",
+      "sha256": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead",
+      "bytes": 27
     },
     {
       "path": "requirements.txt",
@@ -197,6 +207,46 @@
       "bytes": 144246
     },
     {
+      "path": "screenshots/originals/pitch-simple/01-find-the-winner-card.png",
+      "sha256": "6761326d4dad2df3e8af03c60ee002aca98c115969309f21828c76007b4a6882",
+      "bytes": 49294
+    },
+    {
+      "path": "screenshots/originals/pitch-simple/01-find-the-winner-full.png",
+      "sha256": "0baad30cd0db2d01e9de8694e0c9d2b1f575167694d42fb49bf63ebf884e4ddb",
+      "bytes": 57571
+    },
+    {
+      "path": "screenshots/originals/pitch-simple/02-create-five-ideas-card.png",
+      "sha256": "8fbe014ea3fdc4d7e5ed1c409f54fd259981a24ee6c2e2f5039aebcedae44d7a",
+      "bytes": 80631
+    },
+    {
+      "path": "screenshots/originals/pitch-simple/02-create-five-ideas-full.png",
+      "sha256": "60f769475edd62e62427445782415b69ecfba56d58679115eeee1f232f95acdd",
+      "bytes": 88121
+    },
+    {
+      "path": "screenshots/originals/pitch-simple/03-prepare-outreach-card.png",
+      "sha256": "f2b151d2885e267085af1a5c149b4bc4cc2094fcc388a9193386cd265bd0516b",
+      "bytes": 96562
+    },
+    {
+      "path": "screenshots/originals/pitch-simple/03-prepare-outreach-full.png",
+      "sha256": "734168137696229174df0ac8b11740dee74f07811b4e65e1939c01903f1beeb8",
+      "bytes": 103797
+    },
+    {
+      "path": "screenshots/originals/pitch-simple/04-approval-to-results-card.png",
+      "sha256": "42a01ea33f816604464a702364c9635bf926c5ada280dcd5cb5b371bc5e58772",
+      "bytes": 58358
+    },
+    {
+      "path": "screenshots/originals/pitch-simple/04-approval-to-results-full.png",
+      "sha256": "1c12869b14054dfab5e0d4cb54b0f9aa621f7ef41774d667657ba1e88dd304d5",
+      "bytes": 66235
+    },
+    {
       "path": "screenshots/originals/shopify-evidence-card.png",
       "sha256": "4995c6e000c3aa62ae033cb0118227fad339458906da44f76448426c8f2437ac",
       "bytes": 21267
@@ -215,6 +265,36 @@
       "path": "screenshots/originals/ugc-overview.png",
       "sha256": "e1a9a9d096a55a676f0439f6459e70c5e5807e040c3a6dd74496d1b9eff0edc7",
       "bytes": 194823
+    },
+    {
+      "path": "screenshots/pitch-simple/01-find-the-winner.png",
+      "sha256": "aa6cdc3eabfcda3e7e9b475ca0f3ceda39b43851e90a6ecd8b4dda178c615d9e",
+      "bytes": 84150
+    },
+    {
+      "path": "screenshots/pitch-simple/02-create-five-ideas.png",
+      "sha256": "5eefdceda0b8778bb292282cc16510af45be7cd1513016a377e393b88676075c",
+      "bytes": 222503
+    },
+    {
+      "path": "screenshots/pitch-simple/03-prepare-outreach.png",
+      "sha256": "8951df6f16f59fcde0f7b6c92430d3c177f649f99dcb75fa1d82d0126bf59280",
+      "bytes": 242712
+    },
+    {
+      "path": "screenshots/pitch-simple/04-approval-to-results.png",
+      "sha256": "4ca788e9ed683fdd987d48489a2674e74edfcf6b611e6d013b2609204dfb70a7",
+      "bytes": 164743
+    },
+    {
+      "path": "screenshots/pitch-simple/MANIFEST.json",
+      "sha256": "f3503d8253b8011c5d886cf94888beb1b0fab61ceaa3efa29721f99461199dd7",
+      "bytes": 2188
+    },
+    {
+      "path": "screenshots/pitch-simple/four-slides.zip",
+      "sha256": "25527fb2e148d54a602ba60fe4c440822d113c8da509bc32a0226fa9f4d2af72",
+      "bytes": 680831
     },
     {
       "path": "tests/test_lab.py",
@@ -250,6 +330,21 @@
       "path": "tools/export_carousel.py",
       "sha256": "35e5a1b5fe38208b91d8a43e56fd6d7f76ee2fa019671debdc08241f70cc5199",
       "bytes": 2500
+    },
+    {
+      "path": "tools/export_simple_pitch.py",
+      "sha256": "047b538f9217b599a95571413230348af9af3f001ece64600596af6166b8cc40",
+      "bytes": 2195
+    },
+    {
+      "path": "tools/pitch_capture.py",
+      "sha256": "4253c1c659301c82e2dfbdd4ce5f8a2c7840e5804d5c82cac60bd01e3ab06e74",
+      "bytes": 3054
+    },
+    {
+      "path": "tools/pitch_capture.sh",
+      "sha256": "7b52c48a0887d36b5b1937f77db7b9fa95af45d291b341874ad5bb31937d7684",
+      "bytes": 712
     },
     {
       "path": "tools/prepare_proposals.py",

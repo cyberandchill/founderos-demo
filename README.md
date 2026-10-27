@@ -6,13 +6,24 @@ This functioning local proof of concept shows a founder workflow across ecommerc
 
 **LOCAL POC · SYNTHETIC DATA · NO LIVE INTEGRATIONS**
 
-## See the proof
+## Four simple screenshots
 
-| Connect the business data | Approve the next move |
+**Find a winner → create ideas → prepare outreach → approve the work.**
+
+[Download all four slides](https://raw.githubusercontent.com/cyberandchill/founderos-demo/main/screenshots/pitch-simple/four-slides.zip)
+
+| 1. Find the content worth repeating | 2. Turn it into five fresh ideas |
 | --- | --- |
-| [![Four connected local business mockups](screenshots/02-multiplatform-intelligence.png)](screenshots/02-multiplatform-intelligence.png) | [![Approved local execution: briefs, unsent outreach, assignments and tasks](screenshots/03-approved-execution.png)](screenshots/03-approved-execution.png) |
+| [![Find the content worth repeating](screenshots/pitch-simple/01-find-the-winner.png)](screenshots/pitch-simple/01-find-the-winner.png) | [![Five original creative ideas](screenshots/pitch-simple/02-create-five-ideas.png)](screenshots/pitch-simple/02-create-five-ideas.png) |
 
-These are annotated **real browser captures**, not generated UI illustrations. Open either image for the full 1080×1350 version. [Untouched originals](screenshots/originals/) and [screenshot provenance](screenshots/MANIFEST.json) are included.
+| 3. Get creator outreach ready | 4. One approval. The prep is done. |
+| --- | --- |
+| [![Three unsent personalized creator drafts](screenshots/pitch-simple/03-prepare-outreach.png)](screenshots/pitch-simple/03-prepare-outreach.png) | [![Nineteen approved local records saved and verified](screenshots/pitch-simple/04-approval-to-results.png)](screenshots/pitch-simple/04-approval-to-results.png) |
+
+These four images use actual browser captures of simplified, read-only views inside the local UGC and CRM tools. They show the same already-approved, persisted creator workflow. No additional business records were created for the screenshots. Each image is 1080×1350 with one takeaway. Originals and [source hashes](screenshots/pitch-simple/MANIFEST.json) are included. Everything is synthetic; no creator was contacted.
+
+<details>
+<summary>How the demo works, what was tested, and how to run it</summary>
 
 ## The connected demonstration
 
@@ -58,3 +69,5 @@ A fresh clone seeds the business dataset and leaves all work unapproved. Include
 The original lab passed **28 automated tests, 12 post-approval browser checks and five archive/restore checks**. The public export is separately checked; see [VERIFICATION.md](VERIFICATION.md).
 
 Real production integrations, real sends, hosting, billing and multi-user authentication are outside this disposable proof of concept. A session using actual business tools would begin by selecting the workflows, access permissions and approval boundaries together.
+
+</details>

@@ -43,3 +43,7 @@ Two final 1080×1350 exports are composites/annotations of genuine browser scree
 The actual Codex application window was unavailable to automated capture. The daily brief is provided as exact text plus an honest manual capture handoff, not a fabricated chat screenshot. [Daily brief](docs/DAILY-BRIEF.md).
 
 The four named platforms are local mockups. No live Shopify/Klaviyo/CRM connection, model API, email delivery, social messaging, payment, public app hosting or production credentials exist. Marketing figures, customers, creators, fees and attributions are synthetic. Views do not establish sales lift. Expected business impact is a hypothesis, not a measured outcome.
+
+## Simplified four-image pitch
+
+Four new read-only focus views show the computed creator outlier, the five persisted concepts, the three actual NOT SENT outreach drafts and the approved record totals. Eight untouched full/element screenshots were captured, then four 1080×1350 annotated exports were composed without changing UI contents. Six new browser checks passed, including live creator selection and opening a saved full outreach message; no JavaScript errors or business-record mutations occurred. The 28-case suite passed again. An initial broad test invocation found duplicate test modules in nested archive/export directories; `pytest.ini` now scopes collection to `tests`, and the full suite was rerun successfully. The older two proof images remain available as supplemental evidence.

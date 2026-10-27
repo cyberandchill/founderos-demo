@@ -48,3 +48,7 @@ The daily brief was delivered in the actual Codex conversation. Automated captur
 `./archive.sh` snapshots the project database and bundles source, documentation and proof; it excludes caches, dependencies and local temporary files. Validate using the sibling SHA-256 file. Extract to an empty folder, bootstrap, then copy `data/restore-snapshot.sqlite` to `data/business.sqlite` to retain archived state.
 
 `./cleanup.sh` prints its exact targets and requires `REMOVE`. Stop the service first. Archives, source and proof screenshots are preserved. Do not remove archives without separate authorization.
+
+## Four-image pitch capture
+
+After the approved creator workflow exists, run `./tools/pitch_capture.sh`, then `.venv/bin/python tools/export_simple_pitch.py`. The read-only tool views are `/ugc-demo?pitch=winner`, `/ugc-demo?pitch=ideas`, `/creator-crm-demo?pitch=outreach` and `/creator-crm-demo?pitch=results`. They display real computed or saved records, not a new AI interface. The initial actual Codex chat still has only its honest manual capture handoff; these four slides do not pretend to be screenshots of that chat.
