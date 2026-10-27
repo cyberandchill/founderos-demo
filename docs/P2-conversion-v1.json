@@ -1,0 +1,94 @@
+{
+  "id": "P2-conversion-v1",
+  "analysis": {
+    "id": "2",
+    "name": "Test a conversion leak",
+    "finding": "Routine collection: 26,099 sessions, 0.92% purchase rate vs 2.85% on Mask product.",
+    "evidence": {
+      "weak": {
+        "id": "L_ROUTINE",
+        "name": "Routine collection",
+        "sessions": 26099,
+        "orders": 240,
+        "revenue_cents": 1140900,
+        "conversion_pct": 0.92
+      },
+      "reference": {
+        "id": "L_MASK",
+        "name": "Mask product",
+        "sessions": 12934,
+        "orders": 369,
+        "revenue_cents": 1749000,
+        "conversion_pct": 2.85
+      }
+    },
+    "impact": 5,
+    "confidence": 3,
+    "urgency": 4,
+    "effort": 3,
+    "priority_score": 1.35
+  },
+  "artifacts": [
+    {
+      "table": "experiments",
+      "data": {
+        "id": "C-EXP1",
+        "platform": "Shopify",
+        "title": "Routine collection clarity / landing variants",
+        "hypothesis": "The collection page may leave visitors unsure which product to choose. Channel mix and page intent differ, so compare randomly assigned variants on the same page.",
+        "variants": "Control: current collection. A: one concise use-case headline, product comparison and visible price. B: routine checklist, product grid and transparent delivery / returns summary. Primary metric: purchase conversion; guardrails: AOV and checkout abandonment. No uplift promised.",
+        "status": "DRAFTED"
+      }
+    },
+    {
+      "table": "concepts",
+      "data": {
+        "id": "C-LP1",
+        "title": "Variant A \u2014 Pick your evening starting point",
+        "body": "Headline: Find one simple place to begin your wind-down. Show journal, mask and kit with clear price, contents and comparison. Keep reviews and policies factual; no medical claims.",
+        "source_post": "V01-6",
+        "status": "DRAFTED"
+      }
+    },
+    {
+      "table": "concepts",
+      "data": {
+        "id": "C-LP2",
+        "title": "Variant B \u2014 Build a three-step evening ritual",
+        "body": "Headline: Phone away. Plan tomorrow. Settle your space. Present the checklist, then optional product grid with clear prices and delivery information. Avoid guaranteed sleep outcomes.",
+        "source_post": "V01-6",
+        "status": "DRAFTED"
+      }
+    },
+    {
+      "table": "tasks",
+      "data": {
+        "id": "C-T1",
+        "platform": "Shopify",
+        "title": "Review two local landing-copy drafts",
+        "due": "2026-10-29",
+        "status": "PENDING"
+      }
+    },
+    {
+      "table": "tasks",
+      "data": {
+        "id": "C-T2",
+        "platform": "Shopify",
+        "title": "Specify randomization, sample requirement and conversion guardrails",
+        "due": "2026-10-30",
+        "status": "PENDING"
+      }
+    },
+    {
+      "table": "tasks",
+      "data": {
+        "id": "C-T3",
+        "platform": "Shopify",
+        "title": "Review test readiness before any real storefront change",
+        "due": "2026-11-02",
+        "status": "PENDING"
+      }
+    }
+  ]
+}

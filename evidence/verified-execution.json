@@ -1,0 +1,306 @@
+[
+  {
+    "proposal": "P1-growth-v1",
+    "status": "COMPLETED",
+    "approval": [
+      {
+        "proposal_id": "P1-growth-v1",
+        "decision": "APPROVED",
+        "source": "User reply in Codex conversation: 1",
+        "approved_at": "2026-10-27 13:53:48"
+      }
+    ],
+    "records": [
+      {
+        "table": "concepts",
+        "id": "G-CON1",
+        "exists": true,
+        "matches": true,
+        "status": "DRAFTED"
+      },
+      {
+        "table": "concepts",
+        "id": "G-CON2",
+        "exists": true,
+        "matches": true,
+        "status": "DRAFTED"
+      },
+      {
+        "table": "concepts",
+        "id": "G-CON3",
+        "exists": true,
+        "matches": true,
+        "status": "DRAFTED"
+      },
+      {
+        "table": "concepts",
+        "id": "G-CON4",
+        "exists": true,
+        "matches": true,
+        "status": "DRAFTED"
+      },
+      {
+        "table": "concepts",
+        "id": "G-CON5",
+        "exists": true,
+        "matches": true,
+        "status": "DRAFTED"
+      },
+      {
+        "table": "briefs",
+        "id": "G-BR1",
+        "exists": true,
+        "matches": true,
+        "status": "DRAFTED"
+      },
+      {
+        "table": "drafts",
+        "id": "G-MSG1",
+        "exists": true,
+        "matches": true,
+        "status": "NOT SENT"
+      },
+      {
+        "table": "assignments",
+        "id": "G-ASN1",
+        "exists": true,
+        "matches": true,
+        "status": "PENDING"
+      },
+      {
+        "table": "briefs",
+        "id": "G-BR2",
+        "exists": true,
+        "matches": true,
+        "status": "DRAFTED"
+      },
+      {
+        "table": "drafts",
+        "id": "G-MSG2",
+        "exists": true,
+        "matches": true,
+        "status": "NOT SENT"
+      },
+      {
+        "table": "assignments",
+        "id": "G-ASN2",
+        "exists": true,
+        "matches": true,
+        "status": "PENDING"
+      },
+      {
+        "table": "briefs",
+        "id": "G-BR3",
+        "exists": true,
+        "matches": true,
+        "status": "DRAFTED"
+      },
+      {
+        "table": "drafts",
+        "id": "G-MSG3",
+        "exists": true,
+        "matches": true,
+        "status": "NOT SENT"
+      },
+      {
+        "table": "assignments",
+        "id": "G-ASN3",
+        "exists": true,
+        "matches": true,
+        "status": "PENDING"
+      },
+      {
+        "table": "experiments",
+        "id": "G-EXP1",
+        "exists": true,
+        "matches": true,
+        "status": "DRAFTED"
+      },
+      {
+        "table": "tasks",
+        "id": "G-T1",
+        "exists": true,
+        "matches": true,
+        "status": "PENDING"
+      },
+      {
+        "table": "tasks",
+        "id": "G-T2",
+        "exists": true,
+        "matches": true,
+        "status": "PENDING"
+      },
+      {
+        "table": "tasks",
+        "id": "G-T3",
+        "exists": true,
+        "matches": true,
+        "status": "PENDING"
+      },
+      {
+        "table": "tasks",
+        "id": "G-T4",
+        "exists": true,
+        "matches": true,
+        "status": "PENDING"
+      }
+    ],
+    "verified": true,
+    "audit": [
+      {
+        "seq": 2,
+        "ts": "2026-10-27 13:13:00",
+        "kind": "proposal_prepared",
+        "record_id": "P1-growth-v1",
+        "detail": "{\"artifacts\": 19, \"author\": \"Codex conversation\", \"digest\": \"3bd01eaa110eca9d506aeb5c3a46ac3fcfcd6b5b19b8fd1c856000b81bb2ac2c\"}"
+      },
+      {
+        "seq": 5,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "approved",
+        "record_id": "P1-growth-v1",
+        "detail": "{\"digest\": \"3bd01eaa110eca9d506aeb5c3a46ac3fcfcd6b5b19b8fd1c856000b81bb2ac2c\", \"quote\": \"1\", \"scope\": \"local mock records only\"}"
+      },
+      {
+        "seq": 6,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-CON1",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"DRAFTED\", \"table\": \"concepts\"}"
+      },
+      {
+        "seq": 7,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-CON2",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"DRAFTED\", \"table\": \"concepts\"}"
+      },
+      {
+        "seq": 8,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-CON3",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"DRAFTED\", \"table\": \"concepts\"}"
+      },
+      {
+        "seq": 9,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-CON4",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"DRAFTED\", \"table\": \"concepts\"}"
+      },
+      {
+        "seq": 10,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-CON5",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"DRAFTED\", \"table\": \"concepts\"}"
+      },
+      {
+        "seq": 11,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-BR1",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"DRAFTED\", \"table\": \"briefs\"}"
+      },
+      {
+        "seq": 12,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-MSG1",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"NOT SENT\", \"table\": \"drafts\"}"
+      },
+      {
+        "seq": 13,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-ASN1",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"PENDING\", \"table\": \"assignments\"}"
+      },
+      {
+        "seq": 14,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-BR2",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"DRAFTED\", \"table\": \"briefs\"}"
+      },
+      {
+        "seq": 15,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-MSG2",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"NOT SENT\", \"table\": \"drafts\"}"
+      },
+      {
+        "seq": 16,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-ASN2",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"PENDING\", \"table\": \"assignments\"}"
+      },
+      {
+        "seq": 17,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-BR3",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"DRAFTED\", \"table\": \"briefs\"}"
+      },
+      {
+        "seq": 18,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-MSG3",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"NOT SENT\", \"table\": \"drafts\"}"
+      },
+      {
+        "seq": 19,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-ASN3",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"PENDING\", \"table\": \"assignments\"}"
+      },
+      {
+        "seq": 20,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-EXP1",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"DRAFTED\", \"table\": \"experiments\"}"
+      },
+      {
+        "seq": 21,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-T1",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"PENDING\", \"table\": \"tasks\"}"
+      },
+      {
+        "seq": 22,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-T2",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"PENDING\", \"table\": \"tasks\"}"
+      },
+      {
+        "seq": 23,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-T3",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"PENDING\", \"table\": \"tasks\"}"
+      },
+      {
+        "seq": 24,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "record_created",
+        "record_id": "G-T4",
+        "detail": "{\"proposal\": \"P1-growth-v1\", \"status\": \"PENDING\", \"table\": \"tasks\"}"
+      },
+      {
+        "seq": 25,
+        "ts": "2026-10-27 13:53:48",
+        "kind": "execution_completed",
+        "record_id": "P1-growth-v1",
+        "detail": "{\"delivery\": \"NONE\", \"records\": 19}"
+      }
+    ]
+  }
+]

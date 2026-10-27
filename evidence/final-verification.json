@@ -1,0 +1,18 @@
+{
+  "checks_passed": 6,
+  "approval": "Actual user reply: 1",
+  "proposal": "P1-growth-v1",
+  "counts": {
+    "concepts": 5,
+    "briefs": 3,
+    "drafts": 3,
+    "assignments": 3,
+    "experiments": 1,
+    "tasks": 4
+  },
+  "all_payload_fields_match": true,
+  "ui_api_matches_database": true,
+  "outreach_status": "NOT SENT",
+  "other_proposals": "PENDING",
+  "screenshot_dimensions": "1080x1350"
+}

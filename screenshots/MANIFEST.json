@@ -1,0 +1,114 @@
+{
+  "originals": [
+    {
+      "path": "screenshots/originals/shopify-overview.png",
+      "sha256": "f98d5fccfc2f9e0e2d97945ebbbabff4705aabe5a8d03a787ada51d68aef8d06",
+      "origin": "Untouched browser full-page or DOM-element capture of the running localhost mockup",
+      "data": "Synthetic only"
+    },
+    {
+      "path": "screenshots/originals/approved-execution-card.png",
+      "sha256": "045e51e8b09b78c904559435b635fed74edf43070056a2601d872b02f02d9554",
+      "origin": "Untouched browser full-page or DOM-element capture of the running localhost mockup",
+      "data": "Synthetic only"
+    },
+    {
+      "path": "screenshots/originals/ugc-evidence-card.png",
+      "sha256": "ec9d44323d4950bdedc9a2581df265324ca4c8b4964f918d02e8b6140c7ee942",
+      "origin": "Untouched browser full-page or DOM-element capture of the running localhost mockup",
+      "data": "Synthetic only"
+    },
+    {
+      "path": "screenshots/originals/klaviyo-overview.png",
+      "sha256": "9f3445bdc3ba212ceffbce9264c852d3d84ccc2c120c7d6636378d7a5fc6fd1a",
+      "origin": "Untouched browser full-page or DOM-element capture of the running localhost mockup",
+      "data": "Synthetic only"
+    },
+    {
+      "path": "screenshots/originals/approved-execution-full.png",
+      "sha256": "9bf00d872f8111f76af5a80d4e26c67b275adf59b7d6f611332823ce9d34df0e",
+      "origin": "Untouched browser full-page or DOM-element capture of the running localhost mockup",
+      "data": "Synthetic only"
+    },
+    {
+      "path": "screenshots/originals/shopify-evidence-card.png",
+      "sha256": "4995c6e000c3aa62ae033cb0118227fad339458906da44f76448426c8f2437ac",
+      "origin": "Untouched browser full-page or DOM-element capture of the running localhost mockup",
+      "data": "Synthetic only"
+    },
+    {
+      "path": "screenshots/originals/ugc-overview.png",
+      "sha256": "e1a9a9d096a55a676f0439f6459e70c5e5807e040c3a6dd74496d1b9eff0edc7",
+      "origin": "Untouched browser full-page or DOM-element capture of the running localhost mockup",
+      "data": "Synthetic only"
+    },
+    {
+      "path": "screenshots/originals/followups.png",
+      "sha256": "afeddadc90729449f0c9a9874e6ff1c3d0cdfbb35a94d1a0b792b3bcd5d2a2d7",
+      "origin": "Untouched browser full-page or DOM-element capture of the running localhost mockup",
+      "data": "Synthetic only"
+    },
+    {
+      "path": "screenshots/originals/assignments.png",
+      "sha256": "7a3f3bcaef91bb3be077199bd3eb37b3b581841b5e0ced145a1c83dad46cf907",
+      "origin": "Untouched browser full-page or DOM-element capture of the running localhost mockup",
+      "data": "Synthetic only"
+    },
+    {
+      "path": "screenshots/originals/crm-overview.png",
+      "sha256": "aff74e19b7a732aa97263074429242dc754e8c0ba8de60a550ef993cd772ba52",
+      "origin": "Untouched browser full-page or DOM-element capture of the running localhost mockup",
+      "data": "Synthetic only"
+    },
+    {
+      "path": "screenshots/originals/crm-evidence-card.png",
+      "sha256": "9517c6f0265847bc00109ba5820ae0ed6a432ba5567501bbf8ea5d3b0c99c63b",
+      "origin": "Untouched browser full-page or DOM-element capture of the running localhost mockup",
+      "data": "Synthetic only"
+    },
+    {
+      "path": "screenshots/originals/klaviyo-evidence-card.png",
+      "sha256": "8793f252b8240a2bb14b6209fd716b3b60f4e3b754ae383dce08daa0aae15e51",
+      "origin": "Untouched browser full-page or DOM-element capture of the running localhost mockup",
+      "data": "Synthetic only"
+    },
+    {
+      "path": "screenshots/originals/outreach.png",
+      "sha256": "975e5c23f8fd59cd72fcc1e1e27e3549316625c6f50221d8b1b60de560bfc007",
+      "origin": "Untouched browser full-page or DOM-element capture of the running localhost mockup",
+      "data": "Synthetic only"
+    }
+  ],
+  "exports": [
+    {
+      "path": "screenshots/02-multiplatform-intelligence.png",
+      "sources": [
+        "screenshots/originals/ugc-evidence-card.png",
+        "screenshots/originals/shopify-evidence-card.png",
+        "screenshots/originals/crm-evidence-card.png",
+        "screenshots/originals/klaviyo-evidence-card.png"
+      ],
+      "proves": "Shared creator/campaign/customer segment records across the four local mockups",
+      "sha256": "4ac5e93c320c7a03ad4b1461e184ca4e2e03993bac6131873baf4c3fa116b52f",
+      "size": [
+        1080,
+        1350
+      ],
+      "editing": "Unchanged browser crop resized on a captioned canvas; UI contents and statuses not altered"
+    },
+    {
+      "path": "screenshots/03-approved-execution.png",
+      "sources": [
+        "screenshots/originals/approved-execution-card.png"
+      ],
+      "proves": "Actual user approval followed by 19 local record writes; outreach remains NOT SENT",
+      "sha256": "ebc4e2076faecad63ed5846da13c58b885d2a5c5cfb727b5ab3d3ee1b1292e97",
+      "size": [
+        1080,
+        1350
+      ],
+      "editing": "Unchanged browser crop resized on a captioned canvas; UI contents and statuses not altered"
+    }
+  ],
+  "daily_brief": "Exact transcript only; no automated Codex UI screenshot was available."
+}

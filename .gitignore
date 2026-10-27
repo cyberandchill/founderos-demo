@@ -1,0 +1,12 @@
+.venv/
+tmp/
+__pycache__/
+.pytest_cache/
+data/
+archives/
+publication/
+evidence/screenshots-original/
+evidence/carousel-ready/
+evidence/test-results/
+evidence/screenshot-sources.json
+evidence/carousel-manifest.json

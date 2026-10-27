@@ -1,0 +1,248 @@
+{
+  "id": "P1-growth-v1",
+  "analysis": {
+    "id": "1",
+    "name": "Replicate a winning creator angle",
+    "finding": "Demo Maya Vale / V01-6: 84,000 views vs 12,000 historical average (7\u00d7).",
+    "evidence": {
+      "id": "CR01",
+      "name": "Demo Maya Vale",
+      "niche": "Evening routines",
+      "rate_cents": 18000,
+      "status": "AVAILABLE",
+      "post": {
+        "id": "V01-6",
+        "creator_id": "CR01",
+        "campaign_id": "C_ROUTINE",
+        "published": "2026-10-25",
+        "views": 84000,
+        "likes": 3407,
+        "comments": 168,
+        "saves": 1386,
+        "clicks": 1386,
+        "watch_seconds": 10.6,
+        "hook": "Phone away. Lights low. One repeatable ritual.",
+        "theme": "Nighttime routines and recovery"
+      },
+      "baseline": 12000.0,
+      "multiple": 7.0,
+      "history_ids": [
+        "V01-1",
+        "V01-2",
+        "V01-3",
+        "V01-4",
+        "V01-5"
+      ],
+      "attribution": {
+        "orders": 4,
+        "revenue_cents": 18500
+      },
+      "engagement_pct": 5.91,
+      "ctr_pct": 1.65
+    },
+    "impact": 5,
+    "confidence": 4,
+    "urgency": 5,
+    "effort": 2,
+    "priority_score": 2.325
+  },
+  "artifacts": [
+    {
+      "table": "concepts",
+      "data": {
+        "id": "G-CON1",
+        "title": "The phone parking spot",
+        "body": "Open with a phone placed outside reach. Show a three-step, 25-second evening ritual. End with the journal, not a sleep outcome claim. CTA: save the routine.",
+        "source_post": "V01-6",
+        "status": "DRAFTED"
+      }
+    },
+    {
+      "table": "concepts",
+      "data": {
+        "id": "G-CON2",
+        "title": "Seven evenings, one ritual",
+        "body": "A creator diary of seven evening setups. Show consistency and honest variation, avoiding before/after health claims. CTA: choose one habit to try.",
+        "source_post": "V01-6",
+        "status": "DRAFTED"
+      }
+    },
+    {
+      "table": "concepts",
+      "data": {
+        "id": "G-CON3",
+        "title": "The tiny bedroom reset",
+        "body": "A quiet visual reset: clear the bedside surface, lower the light, open the evening journal. No product efficacy claim. CTA: which step fits your space?",
+        "source_post": "V01-6",
+        "status": "DRAFTED"
+      }
+    },
+    {
+      "table": "concepts",
+      "data": {
+        "id": "G-CON4",
+        "title": "Shift-worker wind-down",
+        "body": "Frame the routine around finishing a shift rather than a clock time. Creator describes personal preferences, without promising better sleep. CTA: share your wind-down cue.",
+        "source_post": "V01-6",
+        "status": "DRAFTED"
+      }
+    },
+    {
+      "table": "concepts",
+      "data": {
+        "id": "G-CON5",
+        "title": "Two-minute checklist",
+        "body": "Use a split-screen checklist and real-time demonstration: phone away, tomorrow on paper, lights low. Keep offer and duration matched to control. CTA: save the checklist.",
+        "source_post": "V01-6",
+        "status": "DRAFTED"
+      }
+    },
+    {
+      "table": "briefs",
+      "data": {
+        "id": "G-BR1",
+        "creator_id": "CR01",
+        "title": "The phone parking spot",
+        "body": "Audience: people exploring a repeatable evening routine. Direction: Open with a phone placed outside reach. Show a three-step, 25-second evening ritual. End with the journal, not a sleep outcome claim. CTA: save the routine. Deliverable: one original 20\u201335s vertical video and two hook cuts. Avoid copying V01-6, medical claims and guaranteed results. Label sponsorship in any future real deployment. Keep offer constant. Measure 72h saves/view and qualified clicks/view; examine orders descriptively. Rights, usage period and proposed $180 fee require a separate agreement. Draft due 2026-10-30; creative review 2026-10-31. Source: V01-6, 7\u00d7 creator baseline.",
+        "status": "DRAFTED"
+      }
+    },
+    {
+      "table": "drafts",
+      "data": {
+        "id": "G-MSG1",
+        "creator_id": "CR01",
+        "subject": "The phone parking spot / creative collaboration draft",
+        "body": "Hi Demo Maya Vale, your recent nighttime routines and recovery post (V01-6) reached 84,000 demo views against a 12,000 historical average. I would like to explore an original 'The phone parking spot' concept: Open with a phone placed outside reach. Show a three-step, 25-second evening ritual. End with the journal, not a sleep outcome claim. CTA: save the routine. Would this suit your style? Proposed fee: $180, subject to your agreement on deliverables, usage and timing. This is a local synthetic draft, not a sent offer.",
+        "status": "NOT SENT"
+      }
+    },
+    {
+      "table": "assignments",
+      "data": {
+        "id": "G-ASN1",
+        "creator_id": "CR01",
+        "brief_id": "G-BR1",
+        "campaign_id": "C_ROUTINE",
+        "compensation_cents": 18000,
+        "follow_up": "2026-10-29",
+        "status": "PENDING"
+      }
+    },
+    {
+      "table": "briefs",
+      "data": {
+        "id": "G-BR2",
+        "creator_id": "CR06",
+        "title": "Seven evenings, one ritual",
+        "body": "Audience: people exploring a repeatable evening routine. Direction: A creator diary of seven evening setups. Show consistency and honest variation, avoiding before/after health claims. CTA: choose one habit to try. Deliverable: one original 20\u201335s vertical video and two hook cuts. Avoid copying V01-6, medical claims and guaranteed results. Label sponsorship in any future real deployment. Keep offer constant. Measure 72h saves/view and qualified clicks/view; examine orders descriptively. Rights, usage period and proposed $295 fee require a separate agreement. Draft due 2026-10-30; creative review 2026-10-31. Source: V01-6, 7\u00d7 creator baseline.",
+        "status": "DRAFTED"
+      }
+    },
+    {
+      "table": "drafts",
+      "data": {
+        "id": "G-MSG2",
+        "creator_id": "CR06",
+        "subject": "Seven evenings, one ritual / creative collaboration draft",
+        "body": "Hi Demo Casey Reed, your recent bedroom reset post (V06-6) reached 25,768 demo views against a 15,516 historical average. I would like to explore an original 'Seven evenings, one ritual' concept: A creator diary of seven evening setups. Show consistency and honest variation, avoiding before/after health claims. CTA: choose one habit to try. Would this suit your style? Proposed fee: $295, subject to your agreement on deliverables, usage and timing. This is a local synthetic draft, not a sent offer.",
+        "status": "NOT SENT"
+      }
+    },
+    {
+      "table": "assignments",
+      "data": {
+        "id": "G-ASN2",
+        "creator_id": "CR06",
+        "brief_id": "G-BR2",
+        "campaign_id": "C_ROUTINE",
+        "compensation_cents": 29500,
+        "follow_up": "2026-10-29",
+        "status": "PENDING"
+      }
+    },
+    {
+      "table": "briefs",
+      "data": {
+        "id": "G-BR3",
+        "creator_id": "CR02",
+        "title": "The tiny bedroom reset",
+        "body": "Audience: people exploring a repeatable evening routine. Direction: A quiet visual reset: clear the bedside surface, lower the light, open the evening journal. No product efficacy claim. CTA: which step fits your space? Deliverable: one original 20\u201335s vertical video and two hook cuts. Avoid copying V01-6, medical claims and guaranteed results. Label sponsorship in any future real deployment. Keep offer constant. Measure 72h saves/view and qualified clicks/view; examine orders descriptively. Rights, usage period and proposed $203 fee require a separate agreement. Draft due 2026-10-30; creative review 2026-10-31. Source: V01-6, 7\u00d7 creator baseline.",
+        "status": "DRAFTED"
+      }
+    },
+    {
+      "table": "drafts",
+      "data": {
+        "id": "G-MSG3",
+        "creator_id": "CR02",
+        "subject": "The tiny bedroom reset / creative collaboration draft",
+        "body": "Hi Demo Jules Rowan, your recent bedroom reset post (V02-6) reached 22,246 demo views against a 13,556 historical average. I would like to explore an original 'The tiny bedroom reset' concept: A quiet visual reset: clear the bedside surface, lower the light, open the evening journal. No product efficacy claim. CTA: which step fits your space? Would this suit your style? Proposed fee: $203, subject to your agreement on deliverables, usage and timing. This is a local synthetic draft, not a sent offer.",
+        "status": "NOT SENT"
+      }
+    },
+    {
+      "table": "assignments",
+      "data": {
+        "id": "G-ASN3",
+        "creator_id": "CR02",
+        "brief_id": "G-BR3",
+        "campaign_id": "C_ROUTINE",
+        "compensation_cents": 20300,
+        "follow_up": "2026-10-29",
+        "status": "PENDING"
+      }
+    },
+    {
+      "table": "experiments",
+      "data": {
+        "id": "G-EXP1",
+        "platform": "UGC",
+        "title": "Routine-angle replication / controlled creative test",
+        "hypothesis": "New routine-led hooks may improve saves and qualified clicks; 7\u00d7 organic views alone do not establish conversion lift.",
+        "variants": "Control: original phone-away hook. Variants: five new concepts G-CON1\u20135. Match offer and format. Review early signals after 72h, then seven-day attributed orders. No budget or paid launch authorized.",
+        "status": "DRAFTED"
+      }
+    },
+    {
+      "table": "tasks",
+      "data": {
+        "id": "G-T1",
+        "platform": "CRM",
+        "title": "Review creator interest, rights and proposed fees",
+        "due": "2026-10-29",
+        "status": "PENDING"
+      }
+    },
+    {
+      "table": "tasks",
+      "data": {
+        "id": "G-T2",
+        "platform": "CRM",
+        "title": "Review three original creator drafts and claim safety",
+        "due": "2026-10-31",
+        "status": "PENDING"
+      }
+    },
+    {
+      "table": "tasks",
+      "data": {
+        "id": "G-T3",
+        "platform": "UGC",
+        "title": "Approve controlled creative test plan",
+        "due": "2026-11-02",
+        "status": "PENDING"
+      }
+    },
+    {
+      "table": "tasks",
+      "data": {
+        "id": "G-T4",
+        "platform": "UGC",
+        "title": "Review saves, qualified clicks and attributed orders",
+        "due": "2026-11-05",
+        "status": "PENDING"
+      }
+    }
+  ]
+}

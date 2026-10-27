@@ -1,0 +1,12 @@
+{
+  "checks_passed": 7,
+  "routes": [
+    "shopify-demo",
+    "ugc-demo",
+    "creator-crm-demo",
+    "klaviyo-demo"
+  ],
+  "seed_orders": 959,
+  "baseline_multiple": 7,
+  "fresh_clone_has_no_approvals_or_business_drafts": true
+}

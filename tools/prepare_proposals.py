@@ -1,0 +1,40 @@
+"""Reproducible serialization of content authored by Codex for this demo.
+Not a model, agent, recommendation engine or substitute chat interface.
+Only prepares PENDING proposals; business tables remain untouched.
+"""
+import sys,json
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from app.analysis import opportunities,creator_analysis
+from app.workflow import prepare
+from app.db import ROOT
+
+def build():
+ analysis=opportunities();op={x['id']:x for x in analysis['opportunities']};rank=creator_analysis();winner=rank[0];source=winner['post']['id'];campaign=winner['post']['campaign_id'];art=[]
+ def add(table,**data):art.append({'table':table,'data':data})
+ concepts=[('The phone parking spot','Open with a phone placed outside reach. Show a three-step, 25-second evening ritual. End with the journal, not a sleep outcome claim. CTA: save the routine.'),('Seven evenings, one ritual','A creator diary of seven evening setups. Show consistency and honest variation, avoiding before/after health claims. CTA: choose one habit to try.'),('The tiny bedroom reset','A quiet visual reset: clear the bedside surface, lower the light, open the evening journal. No product efficacy claim. CTA: which step fits your space?'),('Shift-worker wind-down','Frame the routine around finishing a shift rather than a clock time. Creator describes personal preferences, without promising better sleep. CTA: share your wind-down cue.'),('Two-minute checklist','Use a split-screen checklist and real-time demonstration: phone away, tomorrow on paper, lights low. Keep offer and duration matched to control. CTA: save the checklist.')]
+ for i,(title,body) in enumerate(concepts,1):add('concepts',id=f'G-CON{i}',title=title,body=body,source_post=source,status='DRAFTED')
+ # Select top-ranked available creators; all names and compensation are fictional.
+ selected=rank[:3]
+ for i,cr in enumerate(selected,1):
+  title,concept=concepts[i-1];fee=cr['rate_cents'];brief=f"Audience: people exploring a repeatable evening routine. Direction: {concept} Deliverable: one original 20–35s vertical video and two hook cuts. Avoid copying V01-6, medical claims and guaranteed results. Label sponsorship in any future real deployment. Keep offer constant. Measure 72h saves/view and qualified clicks/view; examine orders descriptively. Rights, usage period and proposed ${fee/100:.0f} fee require a separate agreement. Draft due 2026-10-30; creative review 2026-10-31. Source: {source}, {winner['multiple']:g}× creator baseline."
+  add('briefs',id=f'G-BR{i}',creator_id=cr['id'],title=title,body=brief,status='DRAFTED')
+  draft=f"Hi {cr['name']}, your recent {cr['post']['theme'].lower()} post ({cr['post']['id']}) reached {cr['post']['views']:,} demo views against a {cr['baseline']:,.0f} historical average. I would like to explore an original '{title}' concept: {concept} Would this suit your style? Proposed fee: ${fee/100:.0f}, subject to your agreement on deliverables, usage and timing. This is a local synthetic draft, not a sent offer."
+  add('drafts',id=f'G-MSG{i}',creator_id=cr['id'],subject=f'{title} / creative collaboration draft',body=draft,status='NOT SENT')
+  add('assignments',id=f'G-ASN{i}',creator_id=cr['id'],brief_id=f'G-BR{i}',campaign_id=campaign,compensation_cents=fee,follow_up='2026-10-29',status='PENDING')
+ add('experiments',id='G-EXP1',platform='UGC',title='Routine-angle replication / controlled creative test',hypothesis='New routine-led hooks may improve saves and qualified clicks; 7× organic views alone do not establish conversion lift.',variants='Control: original phone-away hook. Variants: five new concepts G-CON1–5. Match offer and format. Review early signals after 72h, then seven-day attributed orders. No budget or paid launch authorized.',status='DRAFTED')
+ for i,(title,due) in enumerate([('Review creator interest, rights and proposed fees','2026-10-29'),('Review three original creator drafts and claim safety','2026-10-31'),('Approve controlled creative test plan','2026-11-02'),('Review saves, qualified clicks and attributed orders','2026-11-05')],1):add('tasks',id=f'G-T{i}',platform='CRM' if i<3 else 'UGC',title=title,due=due,status='PENDING')
+ p1={'id':'P1-growth-v1','analysis':op['1'],'artifacts':list(art)};art.clear()
+ add('experiments',id='C-EXP1',platform='Shopify',title='Routine collection clarity / landing variants',hypothesis='The collection page may leave visitors unsure which product to choose. Channel mix and page intent differ, so compare randomly assigned variants on the same page.',variants='Control: current collection. A: one concise use-case headline, product comparison and visible price. B: routine checklist, product grid and transparent delivery / returns summary. Primary metric: purchase conversion; guardrails: AOV and checkout abandonment. No uplift promised.',status='DRAFTED')
+ for i,(title,body) in enumerate([('Variant A — Pick your evening starting point','Headline: Find one simple place to begin your wind-down. Show journal, mask and kit with clear price, contents and comparison. Keep reviews and policies factual; no medical claims.'),('Variant B — Build a three-step evening ritual','Headline: Phone away. Plan tomorrow. Settle your space. Present the checklist, then optional product grid with clear prices and delivery information. Avoid guaranteed sleep outcomes.')],1):add('concepts',id=f'C-LP{i}',title=title,body=body,source_post=source,status='DRAFTED')
+ for i,(title,due) in enumerate([('Review two local landing-copy drafts','2026-10-29'),('Specify randomization, sample requirement and conversion guardrails','2026-10-30'),('Review test readiness before any real storefront change','2026-11-02')],1):add('tasks',id=f'C-T{i}',platform='Shopify',title=title,due=due,status='PENDING')
+ p2={'id':'P2-conversion-v1','analysis':op['2'],'artifacts':list(art)};art.clear()
+ add('segments',id='S_WINBACK',name='Established / no purchase in recent 30 days',definition="prior_purchase IS NOT NULL AND no order dated 2026-09-28 through 2026-10-27. Synthetic audience only; a real campaign would also require consent, suppression and deliverability checks.",status='DRAFTED')
+ sequence=[('A small evening reset','If your routine has changed, choose one small step tonight: put the phone away or write down tomorrow. Explore the evening checklist if useful. No discount, urgency claim or health promise.'),('Which ritual fits your week?','A short optional checklist: clear the bedside surface, prepare tomorrow, choose a calmer cue. Tell us your preference in a future opted-in survey; no live links in this draft.'),('Keep the useful part','One final reminder to keep whichever step works for you. Browse the local product comparison only if relevant. In a real email, honor consent, unsubscribe and suppression rules.')]
+ for i,(subject,body) in enumerate(sequence,1):add('email_drafts',id=f'R-EMAIL{i}',segment_id='S_WINBACK',subject=subject,body=f'Day {[0,3,7][i-1]}: {body} LOCAL DRAFT — NOT SENT.',status='NOT SENT')
+ add('experiments',id='R-EXP1',platform='Klaviyo',title='Winback sequence / holdout design',hypothesis='Useful routine content may re-engage eligible established customers. Declining cohort purchases can reflect seasonality or synthetic mix; do not assume email is the cause.',variants='Draft A: checklist-first opening. Draft B: preference question. Randomized eligible recipients plus 10% holdout. Primary measure: 14-day reorder rate; guardrails: unsubscribes and complaints. No sending or list upload authorized.',status='DRAFTED')
+ for i,(title,due) in enumerate([('Review winback eligibility, consent and suppression assumptions','2026-10-29'),('Review three draft messages and A/B / holdout design','2026-10-30'),('Review retention experiment readiness','2026-11-03')],1):add('tasks',id=f'R-T{i}',platform='Klaviyo',title=title,due=due,status='PENDING')
+ p3={'id':'P3-retention-v1','analysis':op['3'],'artifacts':list(art)}
+ for p in [p1,p2,p3]:
+  path=ROOT/'docs'/f"{p['id']}.json";path.write_text(json.dumps(p,indent=2));print(prepare(p))
+if __name__=='__main__':build()

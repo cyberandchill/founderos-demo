@@ -1,0 +1,9 @@
+{
+  "foreign_keys": true,
+  "order_totals": true,
+  "one_attribution_per_order": true,
+  "attribution_campaign": true,
+  "post_campaign": true,
+  "60_sales_days": true,
+  "revenue_reconciles": true
+}

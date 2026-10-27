@@ -1,0 +1,106 @@
+{
+  "id": "P3-retention-v1",
+  "analysis": {
+    "id": "3",
+    "name": "Recover repeat purchasing",
+    "finding": "Established customers: 282 \u2192 99 orders across equal 30-day windows (-64.9%).",
+    "evidence": {
+      "id": "S_REPEAT",
+      "name": "Established customers",
+      "definition": "Synthetic prior purchase before the 60-day observation window",
+      "status": "ACTIVE",
+      "previous_orders": 282,
+      "recent_orders": 99,
+      "previous_buyers": 59,
+      "recent_buyers": 49,
+      "order_change_pct": -64.9
+    },
+    "impact": 4,
+    "confidence": 4,
+    "urgency": 3,
+    "effort": 3,
+    "priority_score": 1.25
+  },
+  "artifacts": [
+    {
+      "table": "segments",
+      "data": {
+        "id": "S_WINBACK",
+        "name": "Established / no purchase in recent 30 days",
+        "definition": "prior_purchase IS NOT NULL AND no order dated 2026-09-28 through 2026-10-27. Synthetic audience only; a real campaign would also require consent, suppression and deliverability checks.",
+        "status": "DRAFTED"
+      }
+    },
+    {
+      "table": "email_drafts",
+      "data": {
+        "id": "R-EMAIL1",
+        "segment_id": "S_WINBACK",
+        "subject": "A small evening reset",
+        "body": "Day 0: If your routine has changed, choose one small step tonight: put the phone away or write down tomorrow. Explore the evening checklist if useful. No discount, urgency claim or health promise. LOCAL DRAFT \u2014 NOT SENT.",
+        "status": "NOT SENT"
+      }
+    },
+    {
+      "table": "email_drafts",
+      "data": {
+        "id": "R-EMAIL2",
+        "segment_id": "S_WINBACK",
+        "subject": "Which ritual fits your week?",
+        "body": "Day 3: A short optional checklist: clear the bedside surface, prepare tomorrow, choose a calmer cue. Tell us your preference in a future opted-in survey; no live links in this draft. LOCAL DRAFT \u2014 NOT SENT.",
+        "status": "NOT SENT"
+      }
+    },
+    {
+      "table": "email_drafts",
+      "data": {
+        "id": "R-EMAIL3",
+        "segment_id": "S_WINBACK",
+        "subject": "Keep the useful part",
+        "body": "Day 7: One final reminder to keep whichever step works for you. Browse the local product comparison only if relevant. In a real email, honor consent, unsubscribe and suppression rules. LOCAL DRAFT \u2014 NOT SENT.",
+        "status": "NOT SENT"
+      }
+    },
+    {
+      "table": "experiments",
+      "data": {
+        "id": "R-EXP1",
+        "platform": "Klaviyo",
+        "title": "Winback sequence / holdout design",
+        "hypothesis": "Useful routine content may re-engage eligible established customers. Declining cohort purchases can reflect seasonality or synthetic mix; do not assume email is the cause.",
+        "variants": "Draft A: checklist-first opening. Draft B: preference question. Randomized eligible recipients plus 10% holdout. Primary measure: 14-day reorder rate; guardrails: unsubscribes and complaints. No sending or list upload authorized.",
+        "status": "DRAFTED"
+      }
+    },
+    {
+      "table": "tasks",
+      "data": {
+        "id": "R-T1",
+        "platform": "Klaviyo",
+        "title": "Review winback eligibility, consent and suppression assumptions",
+        "due": "2026-10-29",
+        "status": "PENDING"
+      }
+    },
+    {
+      "table": "tasks",
+      "data": {
+        "id": "R-T2",
+        "platform": "Klaviyo",
+        "title": "Review three draft messages and A/B / holdout design",
+        "due": "2026-10-30",
+        "status": "PENDING"
+      }
+    },
+    {
+      "table": "tasks",
+      "data": {
+        "id": "R-T3",
+        "platform": "Klaviyo",
+        "title": "Review retention experiment readiness",
+        "due": "2026-11-03",
+        "status": "PENDING"
+      }
+    }
+  ]
+}
